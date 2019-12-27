@@ -115,6 +115,9 @@ class SwipeListView extends Component {
                 this._listView && this._listView.scrollToEnd();
             }
         }
+        if(this.props.data){
+this._listView.scrollToEnd();
+}
         this.props.onContentSizeChange && this.props.onContentSizeChange(w, h);
     }
 
